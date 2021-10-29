@@ -11,8 +11,8 @@ puts "2. SHA1"
 puts "3. SHA2"
 encrypt_method = STDIN.gets.to_i
 
-until encrypt_method.between?(1, 2, 3)
-  puts "Выберите 1 или 2"
+until [1, 2, 3].include?(encrypt_method)
+  puts "Выберите 1, 2 или 3"
   encrypt_method = STDIN.gets.to_i
 end
 
